@@ -39,6 +39,7 @@ const Print = {
 
 function finishPrint (iframeElement, params) {
   // Print iframe document
+  iframeElement.setAttribute('style', 'display:block;')
   iframeElement.focus()
 
   // If IE or Edge, try catch with execCommand
